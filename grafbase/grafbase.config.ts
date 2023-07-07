@@ -26,3 +26,7 @@ const Project = g.model('Project', {
   rules.public().read()
   rules.private().create().delete().update()
 })
+
+export default config({
+  schema: g,
+})
